@@ -1,0 +1,14 @@
+name: PR Reviewer
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  reviewer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR 코드 리뷰어 자동 등록
+        uses: ahmadnassri/action-pr-reviewer@v1
+        with:
+          reviewers: baesunny 

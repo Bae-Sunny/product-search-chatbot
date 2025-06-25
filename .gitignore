@@ -1,0 +1,25 @@
+my-gcp-key.json
+.env
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test cache
+.pytest_cache/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Virtualenv
+venv/
+.venv/
+
+# 기타
+*.log

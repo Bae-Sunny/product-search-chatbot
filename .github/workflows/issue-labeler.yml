@@ -1,0 +1,16 @@
+name: Issue Labeler
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 이슈 라벨 자동 등록
+        uses: andymckay/labeler@master
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml 
